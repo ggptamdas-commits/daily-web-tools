@@ -1,0 +1,17 @@
+{
+  "name": "daily-web-tools",
+  "version": "1.0.0",
+  "description": "All-in-one suite of modern web utilities and developer tools ready for Vercel deployment.",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "web-tools",
+    "developer-tools",
+    "utilities",
+    "vercel"
+  ],
+  "author": "ggptamdas-commits",
+  "license": "MIT"
+}

@@ -1,0 +1,60 @@
+/* Custom Styles & Animation Polish */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Tab active state */
+.category-tab {
+  background-color: transparent;
+  color: #6B7280;
+}
+.dark .category-tab {
+  color: #9CA3AF;
+}
+.category-tab:hover {
+  background-color: rgba(20, 184, 166, 0.08);
+  color: #0d9488;
+}
+.dark .category-tab:hover {
+  color: #2dd4bf;
+}
+.category-tab.active-tab {
+  background-color: #0d9488;
+  color: #ffffff !important;
+}
+.dark .category-tab.active-tab {
+  background-color: #14b8a6;
+  color: #0f172a !important;
+}
+
+/* Tool card hover elevation */
+.tool-card {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.tool-card:hover {
+  transform: translateY(-2px);
+}
+
+/* Toast animation */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.toast-slide-in {
+  animation: slideInRight 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Monospace inputs */
+textarea.code-font, input.code-font {
+  font-family: 'JetBrains Mono', monospace;
+}
